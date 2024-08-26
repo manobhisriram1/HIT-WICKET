@@ -1,6 +1,10 @@
+Manobhi Sriram (21BPS1433)
+
+
+
 Turn-Based Chess-Like Game with WebSocket Communication
 Overview
-This project is a turn-based chess-like game designed for real-time play using WebSocket communication. Players control teams of characters on a 5x5 grid, aiming to capture their opponent's pieces. The game supports two players with unique movement rules for different character types and updates the game state in real-time.
+This project is a turn-based chess-like game designed for real-time play using WebSocket communication. Players control teams of characters on a 5x5 grid, aiming to capture their opponent's pieces. The game supports two players with distinct movement rules for different character types and updates the game state in real-time.
 
 Components
 1. Server
@@ -8,7 +12,7 @@ Language: Node.js
 Responsibilities:
 Implement core game logic.
 Set up and manage the WebSocket server.
-Process game moves and maintain game state.
+Process game moves and maintain the game state.
 Broadcast game state updates to clients.
 2. WebSocket Layer
 Responsibilities:
@@ -50,11 +54,19 @@ Two Player Support: Connects two players via WebSocket.
 Real-Time Updates: Reflects moves and game state in real-time.
 Character Movements: Includes different movement rules for various character types.
 Game End Detection: Detects when a player has won by capturing all opponent's characters.
+Move History: Displays the history of moves made during the game.
 Technologies
 Backend: Node.js, WebSocket
 Frontend: HTML, CSS, JavaScript
 Styling: CSS Grid for layout
 Getting Started
 Prerequisites
-Node.js
-WebSocket-compatible browser.
+Node.js installed on your machine.
+WebSocket-compatible browser (modern browsers like Chrome, Firefox, or Edge).
+
+
+Usage
+Start Game: Click the "Start Game" button to initialize the game.
+Reset Game: Click the "Reset Game" button to restart the game.
+Move Characters: Click on a character to select it, then use the move controls to make a move.
+View Move History: The move history panel will display all moves made during the game.
