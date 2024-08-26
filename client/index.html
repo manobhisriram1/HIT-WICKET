@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn-Based Chess</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Turn-Based Chess</h1>
+    <div id="control-panel">
+        <button id="start-game">Start Game</button>
+        <button id="reset-game">Reset Game</button>
+    </div>
+    <div id="game-status-panel">
+        <div id="current-player">Current Player: </div>
+        <div id="game-status">Game Status: </div>
+    </div>
+    <div id="game-board"></div>
+    <div id="selected-square">Selected: </div>
+    <div id="valid-moves"></div>
+    <div id="move-controls">
+        <button class="move-btn" id="move-left" data-move="L">L</button>
+        <button class="move-btn" id="move-right" data-move="R">R</button>
+        <button class="move-btn" id="move-forward" data-move="F">F</button>
+        <button class="move-btn" id="move-backward" data-move="B">B</button>
+        <button class="move-btn" id="move-fl" data-move="FL">FL</button>
+        <button class="move-btn" id="move-fr" data-move="FR">FR</button>
+        <button class="move-btn" id="move-bl" data-move="BL">BL</button>
+        <button class="move-btn" id="move-br" data-move="BR">BR</button>
+    </div>
+    <div id="history-panel">
+        <h2>Move History</h2>
+        <ul id="move-history"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
